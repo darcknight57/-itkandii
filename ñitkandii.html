@@ -66,6 +66,15 @@ body, html {height: 100%}
   </div>
 </div>
 
+<?php
+  function accion(){
+    echo "accion";
+  }
+  function acciondos(){
+    echo 19;
+  }
+?>
+
 <!-- Contact Modal -->
 <div id="contact" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
@@ -87,25 +96,15 @@ body, html {height: 100%}
 </div>
 
 <script>
-  
   function funcion(){
-
-    alert('<?php echo mail(); ?>');
-    document.write('<?php echo mail(); ?>');
-
+    alert('<?php echo accion(); ?>');
+    alert(<?php echo acciondos(); ?>);
+    /* Escribir en el Documento*/
+    document.write('<?php echo accion(); ?>');
+    document.write(<?php echo acciondos(); ?>);
   }
-
 </script>
 
-
-<?php
-function mail(){
-  
-echo "Entró";
-
-}
-
-?> 
 
 </body>
 </html>
