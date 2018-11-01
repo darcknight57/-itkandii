@@ -15,6 +15,16 @@ body, html {height: 100%}
     background-size: cover;
 }
 </style>
+
+<?php
+  function accion(){
+    echo "accion";
+  }
+  function acciondos(){
+    echo 19;
+  }
+?>
+
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
@@ -66,14 +76,7 @@ body, html {height: 100%}
   </div>
 </div>
 
-<?php
-  function accion(){
-    echo "accion";
-  }
-  function acciondos(){
-    echo 19;
-  }
-?>
+
 
 <!-- Contact Modal -->
 <div id="contact" class="w3-modal">
@@ -89,7 +92,7 @@ body, html {height: 100%}
         <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-        <p><button class="w3-button" type="submit" onclick="funcion();">SEND MESSAGE2</button></p>
+        <p><button class="w3-button" type="submit" onclick="funcion();">SEND MESSAGE3</button></p>
       </form>
     </div>
   </div>
@@ -98,10 +101,10 @@ body, html {height: 100%}
 <script>
   function funcion(){
     alert('<?php echo accion(); ?>');
-
+    alert(<?php echo acciondos(); ?>);
     /* Escribir en el Documento*/
     document.write('<?php echo accion(); ?>');
-
+    document.write(<?php echo acciondos(); ?>);
   }
 </script>
 
