@@ -395,7 +395,7 @@ en la Parroquia de la Inmaculada Concepción y después de la ceremonia nos reun
     <label class="field field_v1">
       <input type="text" name="name" class="field__input" id="myInput" placeholder="Nombre">
       <span class="field__label-wrap">
-        <span class="field__label w3-center" style="font-size:"30px"">Nombre y Apellido</span>
+        <span class="field__label w3-center" style="font-size:"30px" ">Nombre y Apellido</span>
       </span>
     </label>
   </div>
@@ -406,6 +406,15 @@ en la Parroquia de la Inmaculada Concepción y después de la ceremonia nos reun
 	<div class = "border">
 		<div class = "inner-cutout">
 			<p class="knockout" id="demo"></p>
+      <p class="w3-center knockout" style="font-size:20px" id="#boletos"><em></em></p>
+      <div class="page w3-center">
+        <label class="field field_v1">
+          <input type="text" name="name" class="field__input" id="myInput" placeholder="">
+          <span class="field__label-wrap">
+            <span class="field__label w3-center" style="font-size:"30px" " id="textoboletos"></span>
+          </span>
+        </label>
+      </div>
 		</div>
 	</div>
 </div>
@@ -455,6 +464,8 @@ button4.addEventListener('click', function() {
 function Boletos() {
   var letter = document.getElementById("myInput").value;
   var text;
+  var boletos;
+  var textoboletos;
 
   // 1 Boleto Male
   if (letter === "Laura Reynoso"
@@ -568,8 +579,13 @@ else if (letter === "Humberto Martinez Ramirez"
   // If the letter is anything else
   else {
     text = "En espera de tu Nombre...";
+    boletos = "Porfavor Confirma la cantidad de Boletos a usar:"
+    textoboletos = "# Boletos"
   }
   document.getElementById("demo").innerHTML = text;
+  document.getElementById("#boletos").innerHTML = boletos;
+  document.getElementById("textoboletos").innerHTML = textoboletos;
+
 }
 
 // Change style of navbar on scroll
