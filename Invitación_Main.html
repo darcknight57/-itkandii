@@ -57,10 +57,39 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (min-device-width: 360px) and (max-device-width: 1900px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 800px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment:fixed;
-    background-size:cover;
+    min-height: 800px;
+    min-width: 360px;
+  }
+  .centerbox{
+    min-width: 360px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment:inherit;
+    min-height: 900px;
+    min-width: 360px;
+  }
+  .centerbox{
+    min-width: 360px;
+  }
+}
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment:inherit;
+    min-height: 900px;
+    min-width: 360px;
+  }
+  .centerbox{
+    min-width: 360px;
+  }
+}
+@media only screen and (min-device-width: 428px) and (max-device-width: 926px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment:inherit;
     min-height: 900px;
     min-width: 360px;
   }
