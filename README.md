@@ -1,2 +1,0 @@
-# -itkandii
-Pagina prueba Ñitkandii
